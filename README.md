@@ -18,7 +18,6 @@ Note: The [gitignore](.gitignore) file covers Windows, OS X, Android Studio and 
 ...![screenshot of app](app/src/main/res/drawable/simple-calc-small-01.png)
 
 6. Now that you are sure it works, make the following changes:
-
   1. validate input if empty or not numeric display an appropriate message in the result field.
   2. add buttons to the UI for subtract, divide, multiply and their associated code
   3. validate input for division, no divide by zero
