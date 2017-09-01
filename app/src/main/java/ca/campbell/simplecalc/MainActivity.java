@@ -3,6 +3,7 @@ package ca.campbell.simplecalc;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     EditText etNum1, etNum2;
     TextView result;
     double num1, num2;
+    private static final String TAG = "MainActivity";
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -44,16 +46,21 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: input validation: set text to show error
     public void addNums(View v) {
-        num1 = Double.parseDouble(etNum1.getText().toString());
-        num2 = Double.parseDouble(etNum2.getText().toString());
 
-        //validation method
-        // needs to be a digit an not empty
-
-        if (etNum1.length() == 0 || etNum2.length() == 0  ) {
+        if (etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")){
+            result.setText(R.string.invalid_number);
+        } else if(etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*") && //Checks for valid numbers
+                etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*")) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+        } else {
             result.setText(R.string.invalid_number);
         }
+
+
         result.setText(Double.toString(num1 + num2));
+
+
     }  //addNums()
 
     public Action getIndexApiAction() {
