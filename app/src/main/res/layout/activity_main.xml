@@ -11,6 +11,15 @@
     android:orientation="vertical"
     tools:context="ca.campbell.simplecalc.MainActivity">
 
+    <Button
+        android:id="@+id/clearFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clearFields"
+        android:text="@string/clearFields"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"/>
+
     <EditText
         android:id="@+id/num1"
         android:layout_width="match_parent"
@@ -27,10 +36,41 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="addNums"
-        android:text="@string/add" />
+        android:text="@string/add"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="subtractNums"
+        android:text="@string/subtract"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="multiplyNums"
+        android:text="@string/multiply"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/Divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="divideNums"
+        android:text="@string/divide"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"/>
+
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The answer will be here" />
+        android:text="@string/resultHint"
+        android:textColor="@color/colorAccent"/>
 </LinearLayout>
