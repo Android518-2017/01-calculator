@@ -12,17 +12,20 @@
     tools:context="ca.campbell.simplecalc.MainActivity">
 
     <EditText
+        android:textColor="#0000ff"
         android:id="@+id/num1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="@color/colorAccent"
         android:hint="@string/enter_hint" />
     <EditText
+        android:textColor="#0000ff"
         android:id="@+id/num2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_hint" />
     <Button
+        android:background="#D3D3D3"
         android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,6 +33,7 @@
         android:text="@string/add" />
 
     <Button
+        android:background="#D3D3D3"
         android:id="@+id/subtract"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,6 +41,7 @@
         android:text="Subtract" />
 
     <Button
+        android:background="#D3D3D3"
         android:id="@+id/multiply"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,6 +49,7 @@
         android:text="Multiply" />
 
     <Button
+        android:background="#D3D3D3"
         android:id="@+id/divide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,13 +57,15 @@
         android:text="Divide" />
 
     <Button
+        android:background="#D3D3D3"
         android:id="@+id/clear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="clearNums"
-        android:text="Clear" />
+        android:text="Clear"/>
 
     <TextView
+        android:textColor="#0000ff"
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
