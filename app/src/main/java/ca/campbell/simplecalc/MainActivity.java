@@ -44,9 +44,13 @@ public class MainActivity extends AppCompatActivity {
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }  //onCreate()
 
+    public void clearFieldsBtn(View v){
+        // TODO: 9/1/2017 Clear Fields functionality and button 
+    }
+    
     // TODO: input validation: set text to show error
-    public void addNums(View v) {
-
+    public void multiplyNums(View v) {
+        // TODO: 9/1/2017 Create button for Multiply 
         if (etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")){
             result.setText(R.string.invalid_number);
         } else if(etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*") && //Checks for valid numbers
@@ -57,10 +61,53 @@ public class MainActivity extends AppCompatActivity {
             result.setText(R.string.invalid_number);
         }
 
+        result.setText(Double.toString(num1 * num2));
+    }
+    
+    public void divideNums(View v) {
+        // TODO: 9/1/2017 Add Divide Btn 
+        // TODO: 9/1/2017 Validation for divide by zero 
+        
+        if (etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")){
+            result.setText(R.string.invalid_number);
+        } else if(etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*") && //Checks for valid numbers
+                etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*")) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+        } else {
+            result.setText(R.string.invalid_number);
+        }
+
+        result.setText(Double.toString(num1 / num2));
+    }
+
+    public void subtractNums(View v) {
+        // TODO: 9/1/2017 Add button for submit 
+        if (etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")){
+            result.setText(R.string.invalid_number);
+        } else if(etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*") && //Checks for valid numbers
+                etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*")) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+        } else {
+            result.setText(R.string.invalid_number);
+        }
+        
+        result.setText(Double.toString(num1 - num2));
+    }
+    public void addNums(View v) {
+         
+        if (etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")){
+            result.setText(R.string.invalid_number);
+        } else if(etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*") && //Checks for valid numbers
+                etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*")) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+        } else {
+            result.setText(R.string.invalid_number);
+        }
 
         result.setText(Double.toString(num1 + num2));
-
-
     }  //addNums()
 
     public Action getIndexApiAction() {
