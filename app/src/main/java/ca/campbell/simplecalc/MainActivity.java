@@ -8,11 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.util.Log;
 
-        //TODO change the colour of the text
-
         //TODO change the colour of the buttons
-
-        //TODO As you make your changes, be sure to push to your fork.
 
 public class MainActivity extends AppCompatActivity {
     EditText etNum1, etNum2;

@@ -26,6 +26,8 @@
         android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
         android:onClick="addNums"
         android:text="@string/add" />
 
@@ -33,6 +35,8 @@
         android:id="@+id/subtract"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
         android:onClick="subNums"
         android:text="Subtract" />
 
@@ -40,6 +44,8 @@
         android:id="@+id/multiply"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
         android:onClick="multNums"
         android:text="Multiply" />
 
@@ -47,6 +53,8 @@
         android:id="@+id/divide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
         android:onClick="divNums"
         android:text="Divide" />
 
@@ -61,6 +69,8 @@
         android:id="@+id/clear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
         android:onClick="clearAll"
         android:text="Clear fields" />
 </LinearLayout>
