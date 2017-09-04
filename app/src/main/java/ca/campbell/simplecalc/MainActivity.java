@@ -12,8 +12,6 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
-
-//  TODO: add buttons & methods for subtract, multiply, divide
 //  TODO: extra input validation: no divide by zero
 
 //  TODO: add a clear button that will clear the result & input fields
@@ -47,26 +45,24 @@ public class MainActivity extends AppCompatActivity {
     public void clearFieldsBtn(View v){
         // TODO: 9/1/2017 Clear Fields functionality and button 
     }
-    
-    // TODO: input validation: set text to show error
+
+
     public void multiplyNums(View v) {
-        // TODO: 9/1/2017 Create button for Multiply 
         if (etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")){
             result.setText(R.string.invalid_number);
         } else if(etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*") && //Checks for valid numbers
                 etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*")) {
             num1 = Double.parseDouble(etNum1.getText().toString());
             num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 * num2));
         } else {
             result.setText(R.string.invalid_number);
         }
 
-        result.setText(Double.toString(num1 * num2));
+
     }
     
     public void divideNums(View v) {
-        // TODO: 9/1/2017 Add Divide Btn 
-        // TODO: 9/1/2017 Validation for divide by zero 
         
         if (etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")){
             result.setText(R.string.invalid_number);
@@ -74,26 +70,32 @@ public class MainActivity extends AppCompatActivity {
                 etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*")) {
             num1 = Double.parseDouble(etNum1.getText().toString());
             num2 = Double.parseDouble(etNum2.getText().toString());
+
+            if(num2 == 0){
+                result.setText(R.string.divide_by_0);
+            } else {
+                result.setText(Double.toString(num1 / num2));
+            }
         } else {
             result.setText(R.string.invalid_number);
         }
 
-        result.setText(Double.toString(num1 / num2));
+
     }
 
     public void subtractNums(View v) {
-        // TODO: 9/1/2017 Add button for submit 
         if (etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")){
             result.setText(R.string.invalid_number);
         } else if(etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*") && //Checks for valid numbers
                 etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*")) {
             num1 = Double.parseDouble(etNum1.getText().toString());
             num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 - num2));
         } else {
             result.setText(R.string.invalid_number);
         }
         
-        result.setText(Double.toString(num1 - num2));
+
     }
     public void addNums(View v) {
          
@@ -103,11 +105,12 @@ public class MainActivity extends AppCompatActivity {
                 etNum1.getText().toString().matches("[0-9]+[.]?[0-9]*")) {
             num1 = Double.parseDouble(etNum1.getText().toString());
             num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 + num2));
         } else {
             result.setText(R.string.invalid_number);
         }
 
-        result.setText(Double.toString(num1 + num2));
+//        result.setText(Double.toString(num1 + num2));
     }  //addNums()
 
     public Action getIndexApiAction() {

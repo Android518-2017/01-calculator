@@ -30,29 +30,29 @@
         android:text="@string/add" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/subtract"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="subtractNums"
         android:text="@string/subtract" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/multiply"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="addNums"
-        android:text="@string/add" />
+        android:onClick="multiplyNums"
+        android:text="@string/multiply" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/divide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="addNums"
-        android:text="@string/add" />
+        android:onClick="divideNums"
+        android:text="@string/divide" />
 
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The answer will be here" />
+        android:text="@string/hint" />
 </LinearLayout>
