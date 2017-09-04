@@ -12,11 +12,7 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
-//  TODO: extra input validation: no divide by zero
 
-//  TODO: add a clear button that will clear the result & input fields
-
-//  TODO: the hint for the result widget is hard coded, put it in the strings file
 
 public class MainActivity extends AppCompatActivity {
     EditText etNum1, etNum2;
@@ -43,7 +39,10 @@ public class MainActivity extends AppCompatActivity {
     }  //onCreate()
 
     public void clearFieldsBtn(View v){
-        // TODO: 9/1/2017 Clear Fields functionality and button 
+        etNum1.setText("");
+        etNum2.setText("");
+        result.setText(R.string.hint);
+
     }
 
 
