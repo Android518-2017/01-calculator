@@ -27,28 +27,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="addNums"
-        android:text="@string/add" />
+        android:text="@string/add"
+        android:textColor="@android:color/holo_blue_bright" />
 
     <Button
         android:id="@+id/subtract"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="subtractNums"
-        android:text="@string/subtract" />
+        android:text="@string/subtract"
+        android:textColor="@android:color/holo_red_dark" />
 
     <Button
         android:id="@+id/multiply"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="multiplyNums"
-        android:text="@string/multiply" />
+        android:text="@string/multiply"
+        android:textColor="@color/NewColourPurplr" />
 
     <Button
         android:id="@+id/divide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="divideNums"
-        android:text="@string/divide" />
+        android:text="@string/divide"
+        android:textColor="@color/CalculatorGreen" />
 
     <TextView
         android:id="@+id/result"
