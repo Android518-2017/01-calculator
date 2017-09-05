@@ -47,9 +47,8 @@ public class MainActivity extends AppCompatActivity {
             num1 = Double.parseDouble(etNum1.getText().toString());
             num2 = Double.parseDouble(etNum2.getText().toString());
 
-            result.setText(Double.toString(num1 + num2));
+            result.setText(Double.toString(num1 - num2));
         }
-        result.setText(Double.toString(num1 - num2));
     }
 
     public void multiplyNums(View v)
@@ -58,9 +57,10 @@ public class MainActivity extends AppCompatActivity {
             num1 = Double.parseDouble(etNum1.getText().toString());
             num2 = Double.parseDouble(etNum2.getText().toString());
 
-            result.setText(Double.toString(num1 + num2));
+            result.setText(Double.toString(num1 * num2));
         }
-        result.setText(Double.toString(num1 * num2));
+        else
+            result.setText("Please enter valid numbers");
     }
 
     public void divideNums(View v)
@@ -70,12 +70,14 @@ public class MainActivity extends AppCompatActivity {
             num1 = Double.parseDouble(etNum1.getText().toString());
             num2 = Double.parseDouble(etNum2.getText().toString());
 
-            result.setText(Double.toString(num1 + num2));
+            if(num2 == 0)
+                result.setText("Can't divide by 0.");
+            else
+                result.setText(Double.toString(num1 / num2));
         }
-        if(num2 == 0)
-            result.setText("Can't divide by 0.");
         else
-            result.setText(Double.toString(num1 / num2));
+            result.setText("Please enter valid numbers");
+
     }
 
     public void clearNums(View v)
