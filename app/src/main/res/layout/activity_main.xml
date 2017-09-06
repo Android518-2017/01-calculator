@@ -39,6 +39,7 @@
         android:onClick="subtrNums"
         android:text="@string/subtract" />
     <TextView
+        style="@style/result"
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
