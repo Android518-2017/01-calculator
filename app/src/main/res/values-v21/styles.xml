@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttons" parent="@android:style/Theme.Material.Light">
+        <!-- colour pink #FF00FF -->
+        <item name="android:background">@color/pink</item>
+        <item name="android:textColor">@color/bluey</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+</resources>

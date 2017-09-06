@@ -1,11 +1,31 @@
 <resources>
 
     <!-- Base application theme. -->
+    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="numberIn">
+        <item name="android:inputType">number</item>
+    </style>
+    <style name="buttons" parent="@android:style/Theme.Material.Light" >
+        <!-- colour pink #FF00FF -->
+        <item name="android:background">@color/pink</item>
+        <item name="android:textColor">@color/bluey</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+    <style name="buttons.alt" >
+        <item name="android:background">@color/pinkish</item>
+    </style>
+
+    <style name="result" parent="@android:style/Theme.Material.Light" >
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:background">@color/orangey</item>
+        <item name="android:textColor">@color/bluey</item>
+        <item name="android:textSize">@dimen/result_text_size</item>
     </style>
 
 </resources>

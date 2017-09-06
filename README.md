@@ -1,30 +1,29 @@
-# Simple Calculator
+# Simple Calculator with Styles
 
 ## What is this?
 
-This repository is starter code for a simple calculator app for Android.  It can be used to learn some of the basics of coding using the Android framework.  It has one Activity and one layout.
+This is my result for the 2nd implementation of the simple calculator, it has the original code from the 1st implementation and some styles.
+  
+## Instructions for updating your calculator with styles
 
-If you are not familiar with using git please see the first git lab.
+The following will give your repo two branches
+_master_  will contain the buttons you added for the last lab
+_addstyles_ will contain everything in master AND the styles you add today.
 
-Note: The [gitignore](.gitignore) file covers Windows, OS X, Android Studio and Eclipse.
+1. Go to your fork of the original caluclator
+2. Clone your fork onto your computer
+3. Create a branch ex: addstyles `git branch addstyles;git checkout addstyles`
+4. make your style/theme changes, using this code as an example, my slide deck and https://developer.android.com/guide/topics/ui/look-and-feel/themes.html  
+5. as you modify and test be sure to :
+```
+git add .
+git commit
+git push origin addstyles
+```
 
-## Instructions for using it:
+## Instructions for using this repo as a base, or running the code:
 
 1. Fork the repository, there should be a fork button on the upper right hand side of this page.
-2. Clone your fork onto your computer
-3. Open it as an existing project in android studio or other IDE.
-4. Run it on an AVD or a real device.
-5. At this point you will see:
-...![screenshot of app](app/src/main/res/drawable/simple_calc_small_01.png)
-
-6. Now that you are sure it works, make the following changes:
-  1. validate input if empty or not numeric display an appropriate message in the result field.
-  2. add buttons to the UI for subtract, divide, multiply and their associated code
-  3. validate input for division, no divide by zero
-  4. add a button that will clear all text fields
-  5. the hint for the result widiget is hard coded, move it to the strings.xml file
-  6. change the colour of the text
-  7. change the colour of the buttons
-  8. see if there are any other instructions in the TODOs in the source code.
-
-7. As you make your changes, be sure to push to your fork.
+2. Open it as an existing project in android studio or other IDE.
+3. Run it on an AVD or a real device.
+4. change the styles
