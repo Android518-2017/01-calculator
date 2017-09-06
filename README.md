@@ -13,7 +13,8 @@ _addstyles_ will contain everything in master AND the styles you add today.
 1. Go to your fork of the original caluclator
 2. Clone your fork onto your computer
 3. Create a branch ex: addstyles `git branch addstyles;git checkout addstyles`
-4. make your style/theme changes, as you modify and test be sure to :
+4. make your style/theme changes, using this code as an example, my slide deck and https://developer.android.com/guide/topics/ui/look-and-feel/themes.html  
+5. as you modify and test be sure to :
 ```
 git add .
 git commit
