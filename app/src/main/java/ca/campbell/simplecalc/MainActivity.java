@@ -6,13 +6,11 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-//  TODO: add buttons & methods for subtract, multiply, divide
+//  TODO: add buttons & methods for multiply, divide
 //  TODO: extra input validation: no divide by zero
-
 //  TODO: add a clear button that will clear the result & input fields
-
 //  TODO: the hint for the result widget is hard coded, put it in the strings file
-
+//  TODO: apply styles / themes changes
 public class MainActivity extends AppCompatActivity {
     EditText etNum1, etNum2;
     TextView result;
@@ -34,5 +32,10 @@ public class MainActivity extends AppCompatActivity {
         num2 = Double.parseDouble(etNum2.getText().toString());
         result.setText(Double.toString(num1 + num2));
     }  //addNums()
+    public void subtrNums(View v) {
+        num1 = Double.parseDouble(etNum1.getText().toString());
+        num2 = Double.parseDouble(etNum2.getText().toString());
+        result.setText(Double.toString(num1 - num2));
+    }  //subtrNums()
 
 }

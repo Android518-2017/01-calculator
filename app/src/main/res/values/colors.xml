@@ -3,4 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="pink">#FF00FF</color>
+    <color name="pinkish">#FF00AE</color>
+    <color name="bluey">#0065FF</color>
+    <color name="orangey">#FF4580</color>
 </resources>
