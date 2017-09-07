@@ -28,14 +28,17 @@ public class MainActivity extends AppCompatActivity {
         result = (TextView) findViewById(R.id.result);
     }  //onCreate()
 
-    // TODO: input validation: set text to show error
     public void addNums(View v) {
-        if(etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")){
+        if(etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")) {
             result.setText("You must enter a number.");
         } else {
-            num1 = Double.parseDouble(etNum1.getText().toString());
-            num2 = Double.parseDouble(etNum2.getText().toString());
-            result.setText(Double.toString(num1 + num2));
+            try{
+                num1 = Double.parseDouble(etNum1.getText().toString());
+                num2 = Double.parseDouble(etNum2.getText().toString());
+                result.setText(Double.toString(num1 + num2));
+            } catch (Exception e){
+                result.setText("You must only enter numeric characters");
+            }
         }
     }  //addNums()
 
