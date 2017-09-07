@@ -54,4 +54,55 @@ public class MainActivity extends AppCompatActivity {
 
     }  //addNums()
 
+    public void substractNums(View v) {
+
+        if(etNum1.getText().toString().equals("") || !isNumber(etNum1.getText().toString())){
+            result.setText("ERROR: First field is empty or incorrect");
+        }
+        else if(etNum2.getText().toString().equals("") || !isNumber(etNum2.getText().toString())){
+            result.setText("ERROR: Second field is empty or incorrect");
+        }
+        else{
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 - num2));
+        }
+
+    }  //substractNums()
+
+    public void multiplyNums(View v) {
+
+        if(etNum1.getText().toString().equals("") || !isNumber(etNum1.getText().toString())){
+            result.setText("ERROR: First field is empty or incorrect");
+        }
+        else if(etNum2.getText().toString().equals("") || !isNumber(etNum2.getText().toString())){
+            result.setText("ERROR: Second field is empty or incorrect");
+        }
+        else{
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 * num2));
+        }
+
+    }  //multiplyNums()
+
+    public void divideNums(View v) {
+
+        if(etNum1.getText().toString().equals("") || !isNumber(etNum1.getText().toString())){
+            result.setText("ERROR: First field is empty or incorrect");
+        }
+        else if(etNum2.getText().toString().equals("0")){
+            result.setText("Cannot divide by 0!");
+        }
+        else if(etNum2.getText().toString().equals("") || !isNumber(etNum2.getText().toString())){
+            result.setText("ERROR: Second field is empty or incorrect");
+        }
+        else{
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 / num2));
+        }
+
+    }  //divideNums()
+
 }

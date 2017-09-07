@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Simple Calculator</string>
     <string name="add">Add</string>
+    <string name="substract">Substract</string>
+    <string name="multiply">Multiply</string>
+    <string name="divide">Divide</string>
     <string name="enter_hint">Enter a number</string>
 </resources>
