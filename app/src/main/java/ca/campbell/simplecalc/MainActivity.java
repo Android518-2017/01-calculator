@@ -105,4 +105,11 @@ public class MainActivity extends AppCompatActivity {
 
     }  //divideNums()
 
+    public void clearFields(View v) {
+            etNum1.setText("");
+            etNum2.setText("");
+            result.setText("");
+
+    }  //divideNums()
+
 }

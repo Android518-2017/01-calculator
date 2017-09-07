@@ -22,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_hint" />
+
     <Button
         android:id="@+id/add"
         android:layout_width="match_parent"
@@ -34,21 +35,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="substractNums"
-        android:text="Substract" />
+        android:text="@string/substract" />
 
     <Button
         android:id="@+id/multiply"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="multiplyNums"
-        android:text="Multiply" />
+        android:text="@string/multiply" />
 
     <Button
         android:id="@+id/divide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="divideNums"
-        android:text="Divide" />
+        android:text="@string/divide" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clearFields"
+        android:text="@string/clear" />
 
     <TextView
         android:id="@+id/result"
