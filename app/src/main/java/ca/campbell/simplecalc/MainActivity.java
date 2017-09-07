@@ -86,4 +86,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void clearNums(View v){
+        etNum1.setText("");
+        etNum2.setText("");
+    }
+
 }

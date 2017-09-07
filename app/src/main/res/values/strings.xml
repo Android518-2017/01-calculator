@@ -4,5 +4,6 @@
     <string name="subtract">Subtract</string>
     <string name="multiply">Multiply</string>
     <string name="divide">Divide</string>
+    <string name="clear">Clear</string>
     <string name="enter_hint">Enter a number</string>
 </resources>

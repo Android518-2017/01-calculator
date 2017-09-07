@@ -46,6 +46,12 @@
         android:layout_height="wrap_content"
         android:onClick="divideNums"
         android:text="@string/divide" />
+    <Button
+        android:id="@+id/clearText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clearNums"
+        android:text="@string/clear" />
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
