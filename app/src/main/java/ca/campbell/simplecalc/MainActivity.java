@@ -42,4 +42,46 @@ public class MainActivity extends AppCompatActivity {
         }
     }  //addNums()
 
+    public void subtractNums(View v){
+        if(etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")) {
+            result.setText("You must enter a number.");
+        } else {
+            try{
+                num1 = Double.parseDouble(etNum1.getText().toString());
+                num2 = Double.parseDouble(etNum2.getText().toString());
+                result.setText(Double.toString(num1 - num2));
+            } catch (Exception e){
+                result.setText("You must only enter numeric characters");
+            }
+        }
+    }
+
+    public void multiplyNums(View v){
+        if(etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")) {
+            result.setText("You must enter a number.");
+        } else {
+            try{
+                num1 = Double.parseDouble(etNum1.getText().toString());
+                num2 = Double.parseDouble(etNum2.getText().toString());
+                result.setText(Double.toString(num1 * num2));
+            } catch (Exception e){
+                result.setText("You must only enter numeric characters");
+            }
+        }
+    }
+
+    public void divideNums(View v){
+        if(etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")) {
+            result.setText("You must enter a number.");
+        } else {
+            try{
+                num1 = Double.parseDouble(etNum1.getText().toString());
+                num2 = Double.parseDouble(etNum2.getText().toString());
+                result.setText(Double.toString(num1 / num2));
+            } catch (Exception e){
+                result.setText("You must only enter numeric characters");
+            }
+        }
+    }
+
 }
