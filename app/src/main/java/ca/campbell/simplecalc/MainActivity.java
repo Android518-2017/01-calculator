@@ -73,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
     public void divideNums(View v){
         if(etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")) {
             result.setText("You must enter a number.");
+        } else if(etNum2.getText().toString().equals("0")){
+            result.setText("You cannot divide by 0");
         } else {
             try{
                 num1 = Double.parseDouble(etNum1.getText().toString());
