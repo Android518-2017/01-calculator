@@ -30,9 +30,19 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: input validation: set text to show error
     public void addNums(View v) {
-        num1 = Double.parseDouble(etNum1.getText().toString());
-        num2 = Double.parseDouble(etNum2.getText().toString());
-        result.setText(Double.toString(num1 + num2));
+
+        if(etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")){
+            result.setText("Please enter two numeric values please");
+        }
+
+        try {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 + num2));
+        }catch(NumberFormatException ex){
+            result.setText("Please make sure your input are valid numeric values");
+        }
+
     }  //addNums()
 
 }
