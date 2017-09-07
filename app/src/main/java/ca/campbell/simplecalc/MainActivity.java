@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
     }  //addNums()
 
-    public void substractNums(View v) {
+    public void subtractNums(View v) {
 
         if(etNum1.getText().toString().equals("") || !isNumber(etNum1.getText().toString())){
             result.setText("ERROR: First field is empty or incorrect");
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             result.setText(Double.toString(num1 - num2));
         }
 
-    }  //substractNums()
+    }  //subtractNums()
 
     public void multiplyNums(View v) {
 
