@@ -28,11 +28,30 @@ public class MainActivity extends AppCompatActivity {
         result = (TextView) findViewById(R.id.result);
     }  //onCreate()
 
+    public boolean isNumber(String text) {
+        try {
+            Double.parseDouble(text);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+
     // TODO: input validation: set text to show error
     public void addNums(View v) {
-        num1 = Double.parseDouble(etNum1.getText().toString());
-        num2 = Double.parseDouble(etNum2.getText().toString());
-        result.setText(Double.toString(num1 + num2));
+
+        if(etNum1.getText().toString().equals("") || !isNumber(etNum1.getText().toString())){
+            result.setText("ERROR: First field is empty or incorrect");
+        }
+        else if(etNum2.getText().toString().equals("") || !isNumber(etNum2.getText().toString())){
+            result.setText("ERROR: Second field is empty or incorrect");
+        }
+        else{
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 + num2));
+        }
+
     }  //addNums()
 
 }
