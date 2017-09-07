@@ -28,21 +28,36 @@ public class MainActivity extends AppCompatActivity {
         result = (TextView) findViewById(R.id.result);
     }  //onCreate()
 
-    // TODO: input validation: set text to show error
+
     public void addNums(View v) {
 
+        if(isValidInput()){
+            result.setText(Double.toString(num1 + num2));
+        }
+
+    }  //addNums()
+
+    public void subtractNums(View v){
+        if(isValidInput()){
+            result.setText(Double.toString(num1 - num2));
+        }
+    }
+
+    private boolean isValidInput(){
         if(etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")){
             result.setText("Please enter two numeric values please");
+            return false;
         }
 
         try {
             num1 = Double.parseDouble(etNum1.getText().toString());
             num2 = Double.parseDouble(etNum2.getText().toString());
-            result.setText(Double.toString(num1 + num2));
+            return true;
         }catch(NumberFormatException ex){
             result.setText("Please make sure your input are valid numeric values");
         }
 
-    }  //addNums()
+        return false;
+    }
 
 }

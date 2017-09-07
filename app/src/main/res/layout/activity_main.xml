@@ -28,6 +28,12 @@
         android:layout_height="wrap_content"
         android:onClick="addNums"
         android:text="@string/add" />
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="subtractNums"
+        android:text="@string/subtract" />
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
