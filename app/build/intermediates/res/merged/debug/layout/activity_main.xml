@@ -27,29 +27,46 @@
         android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
         android:onClick="addNums"
         android:text="@string/add" />
     <Button
         android:id="@+id/substract"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
         android:onClick="substractNums"
         android:text="@string/substract" />
     <Button
         android:id="@+id/multiply"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
         android:onClick="multiplyNums"
         android:text="@string/multiply" />
     <Button
         android:id="@+id/divide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
         android:onClick="divideNums"
         android:text="@string/divide" />
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:onClick="clearFields"
+        android:text="@string/clear" />
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
         android:text="@string/result" />
 </LinearLayout>

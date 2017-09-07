@@ -6,4 +6,5 @@
     <string name="divide">divide</string>
     <string name="enter_hint">Enter a number</string>
     <string name="result">The answer will be here</string>
+    <string name="clear">Reset</string>
 </resources>
