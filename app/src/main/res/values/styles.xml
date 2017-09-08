@@ -15,13 +15,13 @@
         <item name="colorPrimary">#550000</item>
         <item name="colorPrimaryDark">#D46A6A</item>
         <item name="colorAccent">#AA3939</item>
-        <item name="buttonStyle">@style/AppButtonStyle</item>
+        <item name="buttonStyle">@style/AppButtonStylexyz</item>
     </style>
 
     <!-- button style -->
 
-    <style name="AppButtonStyle" parent="">
-        <item name="android:text">#FFAAAA</item>
+    <style name="AppButtonStylexyz">
+        <item name="android:textColor">#FFAAAA</item>
         <item name="android:background">#801515</item>
     </style>
 
