@@ -31,14 +31,14 @@
         android:textColor="@android:color/holo_blue_bright"
         android:backgroundTint="@color/NewColourPurplr" />
 
-    <Button
+    <Button style="@style/AppTheme_Button"
         android:id="@+id/subtract"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="subtractNums"
-        android:text="@string/subtract"
-        android:textColor="@android:color/holo_red_dark"
-        android:backgroundTint="@color/colorPrimaryDark" />
+        android:text="@string/subtract"/>
+        <!--android:textColor="@android:color/holo_red_dark"-->
+        <!--android:backgroundTint="@color/colorPrimaryDark" />-->
 
     <Button
         android:id="@+id/multiply"
