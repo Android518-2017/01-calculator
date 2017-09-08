@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/enter_hint" />
     <Button
+        style="@style/NewStyle"
         android:background="#D3D3D3"
         android:id="@+id/add"
         android:layout_width="match_parent"
@@ -33,6 +34,7 @@
         android:text="@string/add" />
 
     <Button
+        style="@style/NewStyle"
         android:background="#D3D3D3"
         android:id="@+id/subtract"
         android:layout_width="match_parent"
@@ -41,6 +43,7 @@
         android:text="Subtract" />
 
     <Button
+        style="@style/NewStyle"
         android:background="#D3D3D3"
         android:id="@+id/multiply"
         android:layout_width="match_parent"
@@ -49,6 +52,7 @@
         android:text="Multiply" />
 
     <Button
+        style="@style/NewStyle"
         android:background="#D3D3D3"
         android:id="@+id/divide"
         android:layout_width="match_parent"
@@ -57,6 +61,7 @@
         android:text="Divide" />
 
     <Button
+        style="@style/NewStyle"
         android:background="#D3D3D3"
         android:id="@+id/clear"
         android:layout_width="match_parent"
