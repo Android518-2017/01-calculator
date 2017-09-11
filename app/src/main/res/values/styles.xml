@@ -8,4 +8,23 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="numberIn">
+        <item name="android:inputType">number</item>
+    </style>
+    <style name="buttons">
+        <!-- colour pink #FF00FF -->
+        <item name="android:background">@color/black</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+    <!-- inherits from buttons, can override and add items -->
+    <style name="buttons.alt" >
+        <item name="android:background">@color/pinkish</item>
+    </style>
+    <style name="result">
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/result_text_size</item>
+    </style>
+
 </resources>

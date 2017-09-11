@@ -12,62 +12,57 @@
     tools:context="ca.campbell.simplecalc.MainActivity">
 
     <EditText
+        style="@style/numberIn"
         android:id="@+id/num1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="@color/colorAccent"
         android:hint="@string/enter_hint" />
     <EditText
+        style="@style/numberIn"
         android:id="@+id/num2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_hint"
-        android:textColor="@color/red"/>
+        android:hint="@string/enter_hint" />
     <Button
+        style="@style/buttons"
         android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="addNums"
-        android:text="@string/add"
-        android:textColor="@color/red"
-        android:background="@color/black"/>
+        android:text="@string/add" />
     <Button
+        style="@style/buttons"
         android:id="@+id/subtact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="subtractNums"
-        android:text="@string/subtract"
-        android:textColor="@color/red"
-        android:background="@color/black"/>
+        android:text="@string/subtract" />
     <Button
+        style="@style/buttons"
         android:id="@+id/multiply"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="multiplyNums"
-        android:text="@string/multiply"
-        android:textColor="@color/red"
-        android:background="@color/black"/>
+        android:text="@string/multiply" />
     <Button
+        style="@style/buttons"
         android:id="@+id/divide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="divideNums"
-        android:text="@string/divide"
-        android:textColor="@color/red"
-        android:background="@color/black"/>
+        android:text="@string/divide" />
     <Button
+        style="@style/buttons"
         android:id="@+id/clearText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="clearAllText"
-        android:text="@string/clearText"
-        android:textColor="@color/red"
-        android:background="@color/black"/>
+        android:text="@string/clearText" />
     <TextView
+        style="@style/result"
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/resultField"
-        android:textColor="@color/red" />
+        android:text="@string/resultField" />
 
 </LinearLayout>
