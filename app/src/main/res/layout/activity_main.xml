@@ -24,20 +24,18 @@
         android:textColorHint="@color/colorAccent"
         android:hint="@string/enter_hint"/>
     <Button
+        style="@style/buttons.alt"
         android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorButton"
-        android:textColor="@color/colorText"
         android:onClick="addNums"
         android:text="@string/add" />
 
     <Button
+        style="@style/buttons"
         android:id="@+id/subtract"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorButton"
-        android:textColor="@color/colorText"
         android:onClick="subtractNums"
         android:text="@string/subtract" />
 

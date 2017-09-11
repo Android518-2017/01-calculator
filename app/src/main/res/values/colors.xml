@@ -5,4 +5,9 @@
     <color name="colorAccent">#b9b9b9</color>
     <color name="colorText">#FF4081</color>
     <color name="colorButton">#ffffff</color>
+    <color name="pink">#FF00FF</color>
+    <color name="pinkish">#FF00AE</color>
+    <color name="bluey">#0065FF</color>
+    <color name="orangey">#FF4580</color>
+
 </resources>
