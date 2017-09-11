@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean isValidInput(){
-        if(etNum1.getText().toString().equals("") || etNum2.getText().toString().equals("")){
+        if(etNum1.getText().toString().isEmpty() || etNum2.getText().toString().isEmpty()){
             result.setText("Please enter two numeric values please");
             return false;
         }
