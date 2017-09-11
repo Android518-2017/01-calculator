@@ -23,38 +23,54 @@
         android:layout_height="wrap_content"
         android:textColor="@color/colorAccent"
         android:text="@string/enter_hint" />
-    <Button
-        android:id="@+id/add"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
         android:onClick="addNums"
         android:text="@string/add"
         android:textColor="@color/textColor"
         android:background="@color/buttonColor"/>
     <Button
         android:id="@+id/subtract"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="0.50"
         android:onClick="subtractNums"
         android:text="@string/subtract"
         android:textColor="@color/textColor"
         android:background="@color/buttonColor"/>
-    <Button
-        android:id="@+id/divide"
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
         android:onClick="divideNums"
         android:text="@string/divide"
         android:textColor="@color/textColor"
         android:background="@color/buttonColor"/>
     <Button
         android:id="@+id/multiply"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="0.50"
         android:onClick="multiplyNums"
         android:text="@string/multiply"
         android:textColor="@color/textColor"
         android:background="@color/buttonColor"/>
+        </LinearLayout>
     <Button
         android:id="@+id/clear"
         android:layout_width="match_parent"
@@ -62,11 +78,15 @@
         android:onClick="clearFields"
         android:text="@string/clear"
         android:textColor="@color/textColor"
-        android:background="@color/buttonColor"/>
+        android:background="@color/buttonColor"
+        android:layout_gravity="center"/>
+
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/answer_here"
         android:textColor="@color/textColor"/>
+
+
 </LinearLayout>
