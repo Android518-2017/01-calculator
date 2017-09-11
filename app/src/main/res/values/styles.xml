@@ -8,4 +8,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="numberIn">
+        <item name="android:inputType">number</item>
+    </style>
+    <style name="buttons" parent="@android:style/Theme.Material.Light">
+        <item name="android:background">@color/pink</item>
+        <item name="android:textColor">@color/bluery</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+    <style name="buttons.alt">
+        <item name="android:background">@color/pinkish</item>
+    </style>
+    <style name="result" parent="@android:style/Theme.Material.Light">
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:background">@color/orangey</item>
+        <item name="android:textColor">@color/bluery</item>
+        <item name="android:textSize">@dimen/result_text_size</item>
+    </style>
 </resources>

@@ -12,42 +12,49 @@
     tools:context="ca.campbell.simplecalc.MainActivity">
 
     <EditText
+        style="@style/numberIn"
         android:id="@+id/num1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="@color/colorAccent"
         android:hint="@string/enter_hint" />
     <EditText
+        style="@style/numberIn"
         android:id="@+id/num2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="@color/colorAccent"
         android:hint="@string/enter_hint" />
     <Button
+        style="@style/buttons"
         android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="addNums"
         android:text="@string/add" />
     <Button
+        style="@style/buttons.alt"
         android:id="@+id/substract"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="substractNums"
         android:text="@string/substract" />
     <Button
+        style="@style/buttons.alt"
         android:id="@+id/multiply"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="multiplyNums"
         android:text="@string/multiply" />
     <Button
+        style="@style/buttons.alt"
         android:id="@+id/divide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="divideNums"
         android:text="@string/divide" />
     <TextView
+        style="@style/result"
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

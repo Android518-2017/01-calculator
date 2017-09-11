@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\KimHyonh\\Documents\\Android\\lab2\\01-calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\KimHyonh\\.android\\build-cache\\a6c6915b225baf0f4bea11577cbf2e3dfd40c44b\\output\\res\\layout\\notification_template_custom_big.xml"
-    },
-    {
         "merged": "C:\\Users\\KimHyonh\\Documents\\Android\\lab2\\01-calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
         "source": "C:\\Users\\KimHyonh\\.android\\build-cache\\a6c6915b225baf0f4bea11577cbf2e3dfd40c44b\\output\\res\\layout\\abc_screen_toolbar.xml"
     },
@@ -60,20 +56,12 @@
         "source": "C:\\Users\\KimHyonh\\.android\\build-cache\\a6c6915b225baf0f4bea11577cbf2e3dfd40c44b\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "C:\\Users\\KimHyonh\\Documents\\Android\\lab2\\01-calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\KimHyonh\\.android\\build-cache\\a6c6915b225baf0f4bea11577cbf2e3dfd40c44b\\output\\res\\layout\\notification_action_tombstone.xml"
-    },
-    {
         "merged": "C:\\Users\\KimHyonh\\Documents\\Android\\lab2\\01-calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
         "source": "C:\\Users\\KimHyonh\\.android\\build-cache\\a6c6915b225baf0f4bea11577cbf2e3dfd40c44b\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\KimHyonh\\Documents\\Android\\lab2\\01-calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\Users\\KimHyonh\\.android\\build-cache\\a6c6915b225baf0f4bea11577cbf2e3dfd40c44b\\output\\res\\layout\\abc_search_view.xml"
-    },
-    {
-        "merged": "C:\\Users\\KimHyonh\\Documents\\Android\\lab2\\01-calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
-        "source": "C:\\Users\\KimHyonh\\.android\\build-cache\\a6c6915b225baf0f4bea11577cbf2e3dfd40c44b\\output\\res\\layout\\notification_action.xml"
     },
     {
         "merged": "C:\\Users\\KimHyonh\\Documents\\Android\\lab2\\01-calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
@@ -86,10 +74,6 @@
     {
         "merged": "C:\\Users\\KimHyonh\\Documents\\Android\\lab2\\01-calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
         "source": "C:\\Users\\KimHyonh\\.android\\build-cache\\a6c6915b225baf0f4bea11577cbf2e3dfd40c44b\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\KimHyonh\\Documents\\Android\\lab2\\01-calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\KimHyonh\\.android\\build-cache\\a6c6915b225baf0f4bea11577cbf2e3dfd40c44b\\output\\res\\layout\\notification_template_icon_group.xml"
     },
     {
         "merged": "C:\\Users\\KimHyonh\\Documents\\Android\\lab2\\01-calculator\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
