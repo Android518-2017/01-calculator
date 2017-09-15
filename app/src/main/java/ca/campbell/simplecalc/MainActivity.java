@@ -30,9 +30,49 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: input validation: set text to show error
     public void addNums(View v) {
-        num1 = Double.parseDouble(etNum1.getText().toString());
-        num2 = Double.parseDouble(etNum2.getText().toString());
-        result.setText(Double.toString(num1 + num2));
+            try {
+                num1 = Double.parseDouble(etNum1.getText().toString());
+                num2 = Double.parseDouble(etNum2.getText().toString());
+                result.setText(Double.toString(num1 + num2));
+            } catch (NumberFormatException e) {
+                result.setText(R.string.invalid_number);
+            }
     }  //addNums()
+    public void divideNums(View v) {
+        try {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            if(num2 == 0){
+                result.setText(R.string.zero_constrain);
+            }else{
+                result.setText(Double.toString(num1/num2));
+            }
 
+        } catch (NumberFormatException e) {
+            result.setText(R.string.invalid_number);
+        }
+    }  //divideNums()
+    public void multiplyNums(View v) {
+        try {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 * num2));
+        } catch (NumberFormatException e) {
+            result.setText(R.string.invalid_number);
+        }
+    }  //multiplyNums()
+    public void subtractNums(View v) {
+        try {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 - num2));
+        } catch (NumberFormatException e) {
+            result.setText(R.string.invalid_number);
+        }
+    }  //addNums()
+    public void clearFields(View v){
+        etNum1.setText("");
+        etNum2.setText("");
+        result.setText("");
+    }
 }
