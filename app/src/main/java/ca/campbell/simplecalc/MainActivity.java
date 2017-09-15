@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import java.util.regex.*;
+import java.lang.*;
 
 //  TODO: add buttons & methods for subtract, multiply, divide
 //  TODO: extra input validation: no divide by zero
@@ -30,9 +32,57 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: input validation: set text to show error
     public void addNums(View v) {
-        num1 = Double.parseDouble(etNum1.getText().toString());
-        num2 = Double.parseDouble(etNum2.getText().toString());
-        result.setText(Double.toString(num1 + num2));
+        if (validate()) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 + num2));
+        }
     }  //addNums()
 
+    public void subtractNums(View v) {
+        if (validate()) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 - num2));
+        }
+    } //subtractNums()
+
+    public void divideNums(View v) {
+        if (validate()) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            if(num1 == 0 || num2 == 0){
+                result.setText(R.string.div_check);
+            }else {
+                result.setText(Double.toString(num1 / num2));
+            }
+        }
+    } //divideNums()
+
+    public void multiplyNums(View v) {
+        if (validate()) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 * num2));
+        }
+    } //multiplyNums
+
+    public boolean validate() {
+        if(etNum1.getText().toString().isEmpty()
+                || !(etNum1.getText().toString().matches("-?[0-9]*[0-9]*[.]?[0-9]*"))
+                || etNum2.getText().toString().isEmpty()
+                || !(etNum2.getText().toString().matches("-?[0-9]*[0-9]*[.]?[0-9]*"))){
+
+            result.setText(R.string.validate);
+            return false;
+        }
+
+        return true;
+    }
+
+    public void clearFields(View v){
+        result.setText("");
+        etNum1.setText("");
+        etNum2.setText("");
+    }
 }
