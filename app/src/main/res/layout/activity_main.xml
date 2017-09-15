@@ -22,15 +22,60 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_hint" />
+
     <Button
         android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
         android:onClick="addNums"
-        android:text="@string/add" />
+        android:text="@string/add"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
+        android:onClick="subNums"
+        android:text="Subtract" />
+
+    <Button
+        android:id="@+id/multiply"
+        style="@style/AppButtonStylexyz"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:onClick="multNums"
+        android:text="Multiply"
+        android:textAlignment="center" />
+    <!--android:textColor="@android:color/white"-->
+    <!-- android:backgroundTint="@android:color/black" -->
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
+        android:onClick="divNums"
+        android:text="Divide" />
+
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The answer will be here" />
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/answer_here"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
+        android:onClick="clearAll"
+        android:text="Clear fields" />
 </LinearLayout>

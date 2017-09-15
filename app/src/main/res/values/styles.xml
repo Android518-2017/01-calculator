@@ -8,4 +8,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Created theme with different colors-->
+
+    <style name="AppTheme_2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#550000</item>
+        <item name="colorPrimaryDark">#D46A6A</item>
+        <item name="colorAccent">#AA3939</item>
+        <item name="buttonStyle">@style/AppButtonStylexyz</item>
+    </style>
+
+    <!-- button style -->
+
+    <style name="AppButtonStylexyz">
+        <item name="android:textColor">#FFAAAA</item>
+        <item name="android:background">#801515</item>
+    </style>
+
 </resources>
