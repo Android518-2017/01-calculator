@@ -12,25 +12,67 @@
     tools:context="ca.campbell.simplecalc.MainActivity">
 
     <EditText
+        style="@style/NewStyle"
         android:id="@+id/num1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="@color/colorAccent"
         android:hint="@string/enter_hint" />
     <EditText
+        style="@style/NewStyle"
         android:id="@+id/num2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_hint" />
     <Button
+        style="@style/NewStyle"
+        android:background="#D3D3D3"
         android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="addNums"
         android:text="@string/add" />
+
+    <Button
+        style="@style/NewStyle"
+        android:background="#D3D3D3"
+        android:id="@+id/subtract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="subtractNums"
+        android:text="Subtract" />
+
+    <Button
+        style="@style/NewStyle"
+        android:background="#D3D3D3"
+        android:id="@+id/multiply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="multiplyNums"
+        android:text="Multiply" />
+
+    <Button
+        style="@style/NewStyle"
+        android:background="#D3D3D3"
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="divideNums"
+        android:text="Divide" />
+
+    <Button
+        style="@style/NewStyle"
+        android:background="#D3D3D3"
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clearNums"
+        android:text="Clear"/>
+
     <TextView
+        style="@style/NewStyle"
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The answer will be here" />
+        android:text="@string/output_hint" />
 </LinearLayout>

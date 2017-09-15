@@ -30,9 +30,69 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: input validation: set text to show error
     public void addNums(View v) {
-        num1 = Double.parseDouble(etNum1.getText().toString());
-        num2 = Double.parseDouble(etNum2.getText().toString());
-        result.setText(Double.toString(num1 + num2));
+
+        if(isNumber(etNum1.getText().toString()) && isNumber(etNum2.getText().toString())) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+
+            result.setText(Double.toString(num1 + num2));
+        }
+        else
+            result.setText("Please enter valid numbers");
     }  //addNums()
+
+    public void subtractNums(View v)
+    {
+        if(isNumber(etNum1.getText().toString()) && isNumber(etNum2.getText().toString())) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+
+            result.setText(Double.toString(num1 - num2));
+        }
+    }
+
+    public void multiplyNums(View v)
+    {
+        if(isNumber(etNum1.getText().toString()) && isNumber(etNum2.getText().toString())) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+
+            result.setText(Double.toString(num1 * num2));
+        }
+        else
+            result.setText("Please enter valid numbers");
+    }
+
+    public void divideNums(View v)
+    {
+
+        if(isNumber(etNum1.getText().toString()) && isNumber(etNum2.getText().toString())) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+
+            if(num2 == 0)
+                result.setText("Can't divide by 0.");
+            else
+                result.setText(Double.toString(num1 / num2));
+        }
+        else
+            result.setText("Please enter valid numbers");
+
+    }
+
+    public void clearNums(View v)
+    {
+        etNum1.setText("");
+        etNum2.setText("");
+
+        result.setText("");
+    }
+
+    public boolean isNumber(String text)
+    {
+        if(text.matches("-?[0-9]+"))
+            return true;
+        return false;
+    }
 
 }
