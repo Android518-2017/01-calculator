@@ -12,21 +12,23 @@
     tools:context="ca.campbell.simplecalc.MainActivity">
 
     <EditText
-        style="@style/CodeFont"
         android:id="@+id/num1"
+        style="@style/CodeFont"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_hint"
-        android:textColorHint="@color/colorAccent"
-        android:textColorLink="@color/colorBlue" />
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorBlue"
+        android:textSize="16sp" />
 
     <EditText
-        style="@style/CodeFont"
         android:id="@+id/num2"
+        style="@style/CodeFont"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_hint"
-        android:textColorLink="@color/colorBlue" />
+        android:textColorLink="@color/colorBlue"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/add"
@@ -35,7 +37,8 @@
         android:onClick="addNums"
         android:text="@string/add"
         android:textColor="@color/colorBlue"
-        android:textColorLink="@android:color/holo_blue_light" />
+        android:textColorLink="@android:color/holo_blue_light"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/subtract"
@@ -43,7 +46,8 @@
         android:layout_height="wrap_content"
         android:onClick="subtractNums"
         android:text="@string/subtract"
-        android:textColor="@color/colorBlue" />
+        android:textColor="@color/colorBlue"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/divide"
@@ -51,7 +55,8 @@
         android:layout_height="wrap_content"
         android:onClick="divideNums"
         android:text="@string/divide"
-        android:textColor="@color/colorBlue" />
+        android:textColor="@color/colorBlue"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/multiply"
@@ -59,7 +64,8 @@
         android:layout_height="wrap_content"
         android:onClick="multiplyNums"
         android:text="@string/multiply"
-        android:textColor="@color/colorBlue" />
+        android:textColor="@color/colorBlue"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/clear"
@@ -67,12 +73,14 @@
         android:layout_height="wrap_content"
         android:onClick="clearFields"
         android:text="@string/clear"
-        android:textColor="@color/colorBlue" />
+        android:textColor="@color/colorBlue"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/result_hint"
-        android:textColor="@color/colorAccent" />
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
 </LinearLayout>
