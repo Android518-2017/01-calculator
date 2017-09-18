@@ -8,4 +8,27 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="buttons" parent="Theme.AppCompat.Light" >
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:shadowColor" >#70ff106d</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:background">@color/buttonColor</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin_size</item>
+        <item name="android:layout_marginRight">@dimen/button_margin_size</item>
+    </style>
+
+    <style name="header" parent="Theme.AppCompat.Light" >
+        <item name="android:background">@color/headerColor</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="Result">
+        <item name="android:textColor">@color/textColor</item>
+    </style>
 </resources>

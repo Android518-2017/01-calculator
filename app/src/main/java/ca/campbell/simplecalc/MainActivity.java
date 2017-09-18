@@ -6,12 +6,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-//  TODO: add buttons & methods for subtract, multiply, divide
-//  TODO: extra input validation: no divide by zero
 
-//  TODO: add a clear button that will clear the result & input fields
 
-//  TODO: the hint for the result widget is hard coded, put it in the strings file
 
 public class MainActivity extends AppCompatActivity {
     EditText etNum1, etNum2;
@@ -28,11 +24,63 @@ public class MainActivity extends AppCompatActivity {
         result = (TextView) findViewById(R.id.result);
     }  //onCreate()
 
-    // TODO: input validation: set text to show error
+
     public void addNums(View v) {
-        num1 = Double.parseDouble(etNum1.getText().toString());
-        num2 = Double.parseDouble(etNum2.getText().toString());
-        result.setText(Double.toString(num1 + num2));
+
+        if(isValidInput()){
+            result.setText(Double.toString(num1 + num2));
+        }
+
     }  //addNums()
+
+    public void subtractNums(View v){
+        if(isValidInput()){
+            result.setText(Double.toString(num1 - num2));
+        }
+    }
+
+    public void divideNums(View v){
+        if(isValidInput() && isZero()){
+            result.setText(Double.toString(num1 / num2));
+        }
+    }
+
+    public void multiplyNums(View v){
+        if(isValidInput()){
+            result.setText(Double.toString(num1 * num2));
+        }
+    }
+
+    public boolean isZero(){
+        if(num2==0){
+            result.setText("Cannot divide with 0");
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
+    public void clearFields(View v){
+        etNum1.setText("");
+        etNum2.setText("");
+    }
+
+    private boolean isValidInput(){
+        if(etNum1.getText().toString().isEmpty() || etNum2.getText().toString().isEmpty()){
+            result.setText("Please enter two numeric values");
+            return false;
+        }
+
+        try {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            return true;
+        }catch(NumberFormatException ex){
+            result.setText("Please make sure your input are valid numeric values");
+        }
+
+        return false;
+    }
 
 }
