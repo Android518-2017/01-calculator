@@ -38,7 +38,7 @@
         android:text="@string/add"
         android:textColor="@color/colorBlue"
         android:textColorLink="@android:color/holo_blue_light"
-        android:textSize="18sp" />
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/subtract"
@@ -47,7 +47,7 @@
         android:onClick="subtractNums"
         android:text="@string/subtract"
         android:textColor="@color/colorBlue"
-        android:textSize="18sp" />
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/divide"
@@ -56,7 +56,7 @@
         android:onClick="divideNums"
         android:text="@string/divide"
         android:textColor="@color/colorBlue"
-        android:textSize="18sp" />
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/multiply"
@@ -65,7 +65,7 @@
         android:onClick="multiplyNums"
         android:text="@string/multiply"
         android:textColor="@color/colorBlue"
-        android:textSize="18sp" />
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/clear"
@@ -74,7 +74,7 @@
         android:onClick="clearFields"
         android:text="@string/clear"
         android:textColor="@color/colorBlue"
-        android:textSize="18sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/result"
