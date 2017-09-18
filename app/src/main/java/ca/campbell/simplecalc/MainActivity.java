@@ -6,13 +6,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-//  TODO: add buttons & methods for subtract, multiply, divide
-//  TODO: extra input validation: no divide by zero
-
-//  TODO: add a clear button that will clear the result & input fields
-
-//  TODO: the hint for the result widget is hard coded, put it in the strings file
-
 public class MainActivity extends AppCompatActivity {
     EditText etNum1, etNum2;
     TextView result;
@@ -28,11 +21,64 @@ public class MainActivity extends AppCompatActivity {
         result = (TextView) findViewById(R.id.result);
     }  //onCreate()
 
-    // TODO: input validation: set text to show error
     public void addNums(View v) {
-        num1 = Double.parseDouble(etNum1.getText().toString());
-        num2 = Double.parseDouble(etNum2.getText().toString());
-        result.setText(Double.toString(num1 + num2));
+        if(validateInput()){
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 + num2));
+        }
     }  //addNums()
 
+    public void substractNums(View v) {
+        if(validateInput()){
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 - num2));
+        }
+    }
+
+    public void multiplyNums(View v) {
+        if(validateInput()){
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 * num2));
+        }
+    }
+
+    public void divideNums(View v) {
+        if(validateInput()){
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            if(num2 != 0) {
+                result.setText(Double.toString(num1 / num2));
+            } else {
+                result.setText("Infinite");
+            }
+        }
+    }
+
+    public void clearFields(View v) {
+        etNum1.setText("");
+        etNum2.setText("");
+        result.setText(R.string.result);
+    }
+
+    private boolean validateInput(){
+        String strNum1 = etNum1.getText().toString();
+        String strNum2 = etNum2.getText().toString();
+
+        if (strNum1.equals("") || strNum2.equals("")){
+            result.setText("Please type something");
+            return false;
+        }
+
+        try{
+            Double.parseDouble(strNum1);
+            Double.parseDouble(strNum2);
+        } catch (NumberFormatException e){
+            result.setText("The input must be number");
+            return false;
+        }
+        return true;
+    }
 }
