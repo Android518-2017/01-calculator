@@ -74,8 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="clearFields"
-        android:text="@string/clear"
-        android:layout_gravity="center"/>
+        android:text="@string/clear"/>
 
     <TextView
         android:id="@+id/result"

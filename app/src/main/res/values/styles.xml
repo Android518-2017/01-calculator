@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
     <style name="buttons" parent="Theme.AppCompat.Light" >
         <item name="android:textColor">@color/textColor</item>
         <item name="android:textSize">@dimen/button_text_size</item>
