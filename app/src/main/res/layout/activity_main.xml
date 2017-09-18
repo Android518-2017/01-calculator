@@ -13,13 +13,13 @@
     tools:context="ca.campbell.simplecalc.MainActivity">
 
     <EditText
-        style="@style/Text"
+        android:style="@style/Text"
         android:id="@+id/num1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/enter_hint" />
     <EditText
-        style="@style/Text"
+        android:style="@style/Text"
         android:id="@+id/num2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
