@@ -6,13 +6,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-//  TODO: add buttons & methods for subtract, multiply, divide
-//  TODO: extra input validation: no divide by zero
-
-//  TODO: add a clear button that will clear the result & input fields
-
-//  TODO: the hint for the result widget is hard coded, put it in the strings file
-
 public class MainActivity extends AppCompatActivity {
     EditText etNum1, etNum2;
     TextView result;
@@ -28,11 +21,72 @@ public class MainActivity extends AppCompatActivity {
         result = (TextView) findViewById(R.id.result);
     }  //onCreate()
 
-    // TODO: input validation: set text to show error
     public void addNums(View v) {
-        num1 = Double.parseDouble(etNum1.getText().toString());
-        num2 = Double.parseDouble(etNum2.getText().toString());
-        result.setText(Double.toString(num1 + num2));
+
+        if(etNum1.getText().toString() == "" || etNum2.getText().toString() == ""){
+            result.setText("Please Enter 2 numbers to add");
+        }
+        try {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 + num2));
+        }catch(NumberFormatException e){
+            result.setText("Please Enter 2 valid numbers to add");
+        }
+
     }  //addNums()
 
+    public void subtractNums(View v) {
+
+        if(etNum1.getText().toString() == "" || etNum2.getText().toString() == ""){
+            result.setText("Please Enter 2 numbers to add");
+        }
+        try {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 - num2));
+        }catch(NumberFormatException e){
+            result.setText("Please Enter 2 valid numbers to add");
+        }
+    } //subtractNum()
+
+    public void multiplyNums(View v) {
+
+        if(etNum1.getText().toString() == "" || etNum2.getText().toString() == ""){
+            result.setText("Please Enter 2 numbers to add");
+        }
+        try {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 * num2));
+        }catch(NumberFormatException e){
+            result.setText("Please Enter 2 valid numbers to add");
+        }
+    } //multiplyNum()
+
+
+    public void divideNums(View v) {
+
+        if(etNum1.getText().toString() == "" || etNum2.getText().toString() == ""){
+            result.setText("Please Enter 2 numbers to add");
+        }
+        try {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            if(num2 == 0){
+                result.setText("Cannot divide by 0");
+            }else{
+                result.setText(Double.toString(num1 / num2));
+            }
+        }catch(NumberFormatException e){
+            result.setText("Please Enter 2 valid numbers to add");
+        }
+    } //divideNum()
+
+
+    public void clearAllText(View v){
+        etNum1.setText("");
+        etNum2.setText("");
+        result.setText("");
+    }
 }
