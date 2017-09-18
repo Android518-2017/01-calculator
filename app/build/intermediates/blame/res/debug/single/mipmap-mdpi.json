@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\KimHyonh\\Documents\\Android\\lab2\\01-calculator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "C:\\Users\\KimHyonh\\Documents\\Android\\lab2\\01-calculator\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\KimHyonh\\Documents\\Android\\lab2\\01-calculator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\KimHyonh\\Documents\\Android\\lab2\\01-calculator\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    }
+]

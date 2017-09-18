@@ -28,11 +28,58 @@ public class MainActivity extends AppCompatActivity {
         result = (TextView) findViewById(R.id.result);
     }  //onCreate()
 
-    // TODO: input validation: set text to show error
     public void addNums(View v) {
-        num1 = Double.parseDouble(etNum1.getText().toString());
-        num2 = Double.parseDouble(etNum2.getText().toString());
-        result.setText(Double.toString(num1 + num2));
+        if(validateInput()){
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 + num2));
+        }
     }  //addNums()
 
+    public void substractNums(View v) {
+        if(validateInput()){
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 - num2));
+        }
+    }
+
+    public void multiplyNums(View v) {
+        if(validateInput()){
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 * num2));
+        }
+    }
+
+    public void divideNums(View v) {
+        if(validateInput()){
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            if(num2 != 0) {
+                result.setText(Double.toString(num1 / num2));
+            } else {
+                result.setText("Infinite");
+            }
+        }
+    }
+
+    private boolean validateInput(){
+        String strNum1 = etNum1.getText().toString();
+        String strNum2 = etNum2.getText().toString();
+
+        if (strNum1.equals("") || strNum2.equals("")){
+            result.setText("Please type something");
+            return false;
+        }
+
+        try{
+            Double.parseDouble(strNum1);
+            Double.parseDouble(strNum2);
+        } catch (NumberFormatException e){
+            result.setText("The input must be number");
+            return false;
+        }
+        return true;
+    }
 }
