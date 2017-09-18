@@ -16,21 +16,60 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="@color/colorAccent"
-        android:hint="@string/enter_hint" />
+        android:hint="@string/enter_hint"/>
     <EditText
         android:id="@+id/num2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_hint" />
+        android:textColorHint="@color/colorAccent"
+        android:hint="@string/enter_hint"/>
     <Button
+        style="@style/buttons.alt"
         android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="addNums"
         android:text="@string/add" />
+
+    <Button
+        style="@style/buttons"
+        android:id="@+id/subtract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="subtractNums"
+        android:text="@string/subtract" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorButton"
+        android:textColor="@color/colorText"
+        android:onClick="multiplyNums"
+        android:text="@string/multiply" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorButton"
+        android:textColor="@color/colorText"
+        android:onClick="divideNums"
+        android:text="@string/divide" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorButton"
+        android:textColor="@color/colorText"
+        android:onClick="clearFields"
+        android:text="@string/clear" />
+
     <TextView
         android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorText"
         android:text="The answer will be here" />
 </LinearLayout>

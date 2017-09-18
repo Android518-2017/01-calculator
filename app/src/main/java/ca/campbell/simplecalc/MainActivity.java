@@ -28,11 +28,88 @@ public class MainActivity extends AppCompatActivity {
         result = (TextView) findViewById(R.id.result);
     }  //onCreate()
 
+    public boolean isNumber(String text) {
+        try {
+            Double.parseDouble(text);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+
     // TODO: input validation: set text to show error
     public void addNums(View v) {
-        num1 = Double.parseDouble(etNum1.getText().toString());
-        num2 = Double.parseDouble(etNum2.getText().toString());
-        result.setText(Double.toString(num1 + num2));
+
+        if(etNum1.getText().toString().equals("") || !isNumber(etNum1.getText().toString())){
+            result.setText("ERROR: First field is empty or incorrect");
+        }
+        else if(etNum2.getText().toString().equals("") || !isNumber(etNum2.getText().toString())){
+            result.setText("ERROR: Second field is empty or incorrect");
+        }
+        else{
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 + num2));
+        }
+
     }  //addNums()
+
+    public void subtractNums(View v) {
+
+        if(etNum1.getText().toString().equals("") || !isNumber(etNum1.getText().toString())){
+            result.setText("ERROR: First field is empty or incorrect");
+        }
+        else if(etNum2.getText().toString().equals("") || !isNumber(etNum2.getText().toString())){
+            result.setText("ERROR: Second field is empty or incorrect");
+        }
+        else{
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 - num2));
+        }
+
+    }  //subtractNums()
+
+    public void multiplyNums(View v) {
+
+        if(etNum1.getText().toString().equals("") || !isNumber(etNum1.getText().toString())){
+            result.setText("ERROR: First field is empty or incorrect");
+        }
+        else if(etNum2.getText().toString().equals("") || !isNumber(etNum2.getText().toString())){
+            result.setText("ERROR: Second field is empty or incorrect");
+        }
+        else{
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 * num2));
+        }
+
+    }  //multiplyNums()
+
+    public void divideNums(View v) {
+
+        if(etNum1.getText().toString().equals("") || !isNumber(etNum1.getText().toString())){
+            result.setText("ERROR: First field is empty or incorrect");
+        }
+        else if(etNum2.getText().toString().equals("0")){
+            result.setText("Cannot divide by 0!");
+        }
+        else if(etNum2.getText().toString().equals("") || !isNumber(etNum2.getText().toString())){
+            result.setText("ERROR: Second field is empty or incorrect");
+        }
+        else{
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 / num2));
+        }
+
+    }  //divideNums()
+
+    public void clearFields(View v) {
+            etNum1.setText("");
+            etNum2.setText("");
+            result.setText("");
+
+    }  //divideNums()
 
 }
