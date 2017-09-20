@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CalcThemeA" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#ffa5b3</item>
+        <item name="colorPrimaryDark">#32fc28</item>
+        <item name="colorAccent">#a83c3c</item>
+    </style>
+/*********************************/
+    <style name="AppTheme_Button" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#6bebef</item>
+        <item name="android:background">#af361d</item>
+    </style>
+
+
+
 </resources>
