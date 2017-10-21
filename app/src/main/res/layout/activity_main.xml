@@ -1,36 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
     tools:context="ca.campbell.simplecalc.MainActivity">
 
     <EditText
         android:id="@+id/num1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="@color/colorAccent"
-        android:hint="@string/enter_hint" />
+        android:hint="@string/enter_hint"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorAccent" />
+
     <EditText
         android:id="@+id/num2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_hint" />
-    <Button
-        android:id="@+id/add"
+        android:hint="@string/enter_hint"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorAccent" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="addNums"
-        android:text="@string/add" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="calculate"
+            android:text="@string/add"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/sub"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="calculate"
+            android:text="@string/sub"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/mul"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="calculate"
+            android:text="@string/mul"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/div"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="calculate"
+            android:text="@string/div"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clear"
+        android:text="@string/clear" />
+
     <TextView
+
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The answer will be here" />
+        android:layout_gravity="center"
+        android:text="@string/answer_hint"
+        android:textSize="24sp" />
+
 </LinearLayout>
