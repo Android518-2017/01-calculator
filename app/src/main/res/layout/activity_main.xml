@@ -77,6 +77,12 @@
             android:textSize="24sp" />
     </LinearLayout>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clear"
+        android:text="@string/clear" />
+
     <TextView
 
         android:id="@+id/result"

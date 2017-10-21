@@ -10,8 +10,6 @@ import ca.campbell.simplecalc.util.Calculator;
 
 //  DONE: add buttons & methods for subtract, multiply, divide
 
-//  TODO: add a clear button that will clear the result & input fields
-
 //  DONE: the hint for the result widget is hard coded, put it in the strings file
 
 public class MainActivity extends AppCompatActivity {
@@ -73,5 +71,10 @@ public class MainActivity extends AppCompatActivity {
         return String.valueOf(etNum1.getText()).isEmpty() || String.valueOf(etNum2.getText()).isEmpty();
     }
 
-
+    //  DONE: add a clear button that will clear the result & input fields
+    public void clear(View view) {
+        etNum1.setText("");
+        etNum2.setText("");
+        tvResult.setText(getString(R.string.answer_hint));
+    }
 }
