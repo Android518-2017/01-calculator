@@ -15,7 +15,10 @@ Note: The [gitignore](.gitignore) file covers Windows, OS X, Android Studio and 
 3. Open it as an existing project in android studio or other IDE.
 4. Run it on an AVD or a real device.
 5. At this point you will see:
-...![screenshot of app](app/src/main/res/drawable/simple_calc_small_01.png)
+<img align="right" width="100" height="200" src="app/src/main/res/drawable/simple_calc_small_01.png">
+
+<!-- ![screenshot of app](app/src/main/res/drawable/simple_calc_small_01.png)
+-->
 
 6. Now that you are sure it works, make the following changes:
   1. validate input if empty or not numeric display an appropriate message in the result field.
