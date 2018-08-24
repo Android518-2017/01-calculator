@@ -15,7 +15,7 @@ Note: The [gitignore](.gitignore) file covers Windows, OS X, Android Studio and 
 3. Open it as an existing project in android studio or other IDE.
 4. Run it on an AVD or a real device.
 5. At this point you will see:
-<img align="right" width="100" height="200" src="app/src/main/res/drawable/simple_calc_small_01.png">
+<img align="right" width="150" height="200" src="app/src/main/res/drawable/simple_calc_small_01.png">
 
 <!-- ![screenshot of app](app/src/main/res/drawable/simple_calc_small_01.png)
 -->
